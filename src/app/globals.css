@@ -1,3 +1,21 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
- 
+@layer base {
+  body {
+    @apply bg-dark-1 text-white;
+  }
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.bg-dark-1 {
+  background-color: #1C1F2E;
+}
